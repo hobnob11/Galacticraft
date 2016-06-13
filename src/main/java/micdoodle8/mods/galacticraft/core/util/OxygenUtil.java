@@ -44,28 +44,28 @@ import java.util.HashSet;
 public class OxygenUtil
 {
     private static HashSet<BlockVec3> checked;
-
-    @SideOnly(Side.CLIENT)
-    public static boolean shouldDisplayTankGui(GuiScreen gui)
-    {
-        if (FMLClientHandler.instance().getClient().gameSettings.hideGUI)
-        {
-            return false;
-        }
-
-        if (gui == null)
-        {
-            return true;
-        }
-
-        if (gui instanceof GuiInventory)
-        {
-            return false;
-        }
-
-        return gui instanceof GuiChat;
-
-    }
+//
+//    @SideOnly(Side.CLIENT)
+//    public static boolean shouldDisplayTankGui(GuiScreen gui)
+//    {
+//        if (FMLClientHandler.instance().getClient().gameSettings.hideGUI)
+//        {
+//            return false;
+//        }
+//
+//        if (gui == null)
+//        {
+//            return true;
+//        }
+//
+//        if (gui instanceof GuiInventory)
+//        {
+//            return false;
+//        }
+//
+//        return gui instanceof GuiChat;
+//
+//    }
 
     public static boolean isAABBInBreathableAirBlock(EntityLivingBase entity)
     {

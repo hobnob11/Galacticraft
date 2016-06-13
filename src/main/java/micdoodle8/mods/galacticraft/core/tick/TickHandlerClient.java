@@ -232,7 +232,7 @@ public class TickHandlerClient
                 OverlayLaunchCountdown.renderCountdownOverlay();
             }
 
-            if (player != null && player.worldObj.provider instanceof IGalacticraftWorldProvider && OxygenUtil.shouldDisplayTankGui(minecraft.currentScreen) && OxygenUtil.noAtmosphericCombustion(player.worldObj.provider))
+            if (player != null && player.worldObj.provider instanceof IGalacticraftWorldProvider && OxygenUtil.noAtmosphericCombustion(player.worldObj.provider))
             {
                 int var6 = (TickHandlerClient.airRemaining - 90) * -1;
 
